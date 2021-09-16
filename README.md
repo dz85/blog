@@ -22,3 +22,36 @@
   > - 可以在工具、架构和开发流程不发生明显变化的前提下实现扩展。
   >
   > 这套理论适用于任意语言和后端服务（数据库、消息队列、缓存等）开发的应用程序。
+
+### Frontend
+
+#### CSS
+
+- [w3 Named Colors](https://www.w3.org/TR/css-color-4/#color-keywords)
+  > CSS 的 16 种命名颜色最初来自 VGA 调色板，然后被采用到 HTML 中：
+  > name | description
+  > ------------ | -------------
+  > aqua| 浅绿色
+  > black| 黑色
+  > blue| 蓝色
+  > fuchsia| 紫红色
+  > gray| 灰色
+  > green| 绿色
+  > lime| 石灰
+  > maroon| 栗色
+  > navy| 海军蓝
+  > olive| 橄榄色
+  > purple| 紫色
+  > red| 红色
+  > silver| 银色
+  > teal| 蓝绿色
+  > white| 白色
+  > yellow| 黄色
+  >
+  > 其余大部分来自 X11 颜色系统的一个版本，在 Unix 派生系统中用于为控制台指定颜色，然后被采用到 SVG 中。
+
+- [w3 - named colors defined by SVG 1.1](https://www.w3.org/TR/SVG11/types.html#ColorKeywords)
+  >
+  > ```javascript
+  > $$('.color-keyword-value').map($tr => [...$tr.parentElement.parentElement.children].map($td => $td.textContent)).map(([, a, b]) => [a, b.match(/\d+/g)]).filter(([, b]) => b[0]===b[1] && b[1]===b[2]).sort(([, b1], [, b2]) => b1[0]-b2[0])
+  > ```
